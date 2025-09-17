@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Portal</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 25px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+    }
+
+    .card ul {
+      list-style: none;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: 600;
+    }
+
+    .card a:hover {
+      color: #2c3e50;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+      background: #ecf0f1;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Course Portal</h1>
+    <p>Explore resources and information for various programs</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Certification Courses</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" >Python</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" >Java</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Database_management_system" >DBMS</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>B.Tech Courses</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Computer_science" >Computer Science</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Mechanical_engineering" >Mechanical</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Civil_engineering" >Civil</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>M.Tech Courses</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Data_science" >Data Science</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" >Artificial Intelligence</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Cybersecurity" >Cyber Security</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Ph.D Courses</h2>
+      <ul>
+        <li><nav><a href="https://en.wikipedia.org/wiki/Computer_science" >Computer Science</a></nav></li>
+        <li><nav><a href="https://en.wikipedia.org/wiki/Mechanical_engineering" >Mechanical</a></nav></li>
+        <li><nav><a href="https://en.wikipedia.org/wiki/Civil_engineering" >Civil</a></nav></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Course Portal &middot; <a href="mailto:chirukola123@gmail.com">Contact</a>
+  </footer>
+
+</body>
+</html>

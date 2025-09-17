@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .buttons input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+    }
+    input[type="submit"]:hover {
+      background: #45a049;
+    }
+    input[type="reset"] {
+      background: #e0e0e0;
+      color: #333;
+    }
+    input[type="reset"]:hover {
+      background: #d5d5d5;
+    }
+    #successMessage {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Register Your Course</h1>
+    <form id="registrationForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <div class="buttons">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <div id="successMessage">
+      Registration Successful!
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('registrationForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // prevent actual form submission
+      successMessage.style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
