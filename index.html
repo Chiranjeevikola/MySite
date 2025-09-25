@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>
+  <style>
+ 
+    body {
+      background-image: url('flight.jpeg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+    h2 {
+      color: blue;
+      font-size: 30px;
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+   
+    #id_s {
+      color: green;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    
+    .class_s {
+      width: 50%;
+      border-collapse: collapse;
+      color: black;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8); 
+      margin: 20px auto;
+    }
+
+    th, td {
+      padding: 8px;
+    }
+
+
+    nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+   
+    p {
+      color: blue;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.6);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2><strong><u>WELCOME TO MY ASSAM FLIGHTS</u></strong></h2>
+
+  <h1 id="id_s">Anyone can Book Assam Flights</h1>
+
+  <table border="1" class="class_s">
+    <tr>
+      <th style="background-color: lightblue;">Flight Number</th>
+      <th style="background-color: lightgreen;">Flight Name</th>
+      <th style="background-color: lightyellow;">Flight Capacity</th>
+      <th style="background-color: lightcoral;">Flight Colour</th>
+    </tr>
+
+    <tr>
+      <td>101</td>
+      <td>AirIndia</td>
+      <td>200</td>
+      <td>Red</td>
+    </tr>
+
+    <tr>
+      <td>102</td>
+      <td>IndiGo</td>
+      <td>180</td>
+      <td>White</td>
+    </tr>
+
+    <tr>
+      <td>103</td>
+      <td>SpiceJet</td>
+      <td>150</td>
+      <td>Orange</td>
+    </tr>
+
+    <tr>
+      <td>104</td>
+      <td>Vistara</td>
+      <td>220</td>
+      <td>Blue</td>
+    </tr>
+  </table>
+
+  <h4 style="text-align:center;">Useful Links</h4>
+  <nav>
+    <a href="https://www.airindia.in">AirIndia</a>
+    <a href="https://www.goindigo.in">IndiGo</a>
+    <a href="https://www.spicejet.com">SpiceJet</a>
+    <a href="https://www.airvistara.com">Vistara</a>
+  </nav>
+
+  <nav>
+    <a href="Aboutus.html">About Us</a>
+    <a href="Contactus.html">Contact Us</a>
+    <a href="Services.html">Services</a>
+    <a href="firstcss.html">Home</a>
+    <a href="https://www.example.com">External Link</a>
+  </nav>
+
+  <footer>
+    <p>&copy; 2025 Assam Flights</p>
+  </footer>
+
+</body>
+</html>
